@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="demoApp">
+  <head>
+    <title>Cowsay Client Side Lab</title>
+    <script src="bundle.js"></script>
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+  <body>
+    <main ng-controller="CowsayController">
+      <form novalidate ng-submit="CowsaysIt()">
+        <input type="text" ng-model="cowtext">
+        <input type="submit" value="done">
+      </form>
+      <pre>{{ sayIt() }} </pre>
+      <pre>{{ cowsayResult }} </pre>
+    </main>
+  </body>
+</html>
