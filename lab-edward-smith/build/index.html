@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html ng-app="cowsayApp">
   <head>
-    <title>Cowsay</title>
+    <title>Cowsay app</title>
+    <script src="bundle.js"></script>
+    <link rel="stylesheet" href="bunde.css">
   </head>
   <body>
     <main ng-controller="CowsayController">
-      {{ cowtext }}
+      <form novalidate>
+        <input type="text" ng-model="cowtext">
+        <input type="submit" value="Submit" ng-click="speakIt()">
+        <input type="submit" value="Revert" ng-click="revertIt()">
+        <select name="select" ng-model="selectedCow">
+          <option ng-repeat="cow in cowTypes" value="{{cow}}">{{ cow }}</option>
+        </select>
+      </form>
+
+      <pre>
+        {{ say() }}
+      </pre>
+      <pre>
+        {{ result  }}
+      </pre>
     </main>
   </body>
 </html>
