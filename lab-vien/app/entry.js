@@ -14,7 +14,6 @@ const app = angular.module('cowsayApp', []);
 app.controller('CowsayController', ['$scope', function($scope) {
   $scope.cowtext = 'something';
   $scope.cowType = 'default';
-  $scope.previousCow = '';
   $scope.previousCowArray = [];
 
   cowsay.list((err, list) => {
@@ -32,12 +31,12 @@ app.controller('CowsayController', ['$scope', function($scope) {
   };
 
   $scope.save = function() {
-    $scope.previousCow = $scope.saved || '';
+    $scope.previousCowArray.push($scope.saved || '');
     $scope.saved = $scope.say();
   };
 
   $scope.reset = function() {
-    $scope.saved = $scope.previousCow || '';
+    $scope.saved = $scope.previousCowArray.pop() || '';
   };
 }]);
 // components / directives
