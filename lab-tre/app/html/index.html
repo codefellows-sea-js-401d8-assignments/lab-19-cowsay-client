@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="demoApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Cowsay</title>
+    <script src="bundle.js"></script>
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+  <body>
+    <main ng-controller="CowsayController">
+      <form novalidate ng-submit="speakIt()">
+        <input type="text" ng-model="cowtext">
+        <input type="submit" value="done son">
+        <input ng-click="" type="button" value="click">
+      </form>
+      <pre>{{say()}}</pre>
+      <pre>{{result}}</pre>
+    </main>
+  </body>
+</html>
