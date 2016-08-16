@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html >
   <head>
     <title> lulwat</title>
     <script src="bundle.js"></script>
     <link rel="stylesheet" href="bundle.css">
   </head>
   <body>
-    <h1> lulwat </h1>
+    <main ng-controller = "CowsayController">
+      <form novalidate ng-submit= "speakIt">
+        <input type="text" ng-model="cowText">
+        <input type="submit" value="this is a trip">
+      </form>
+      <pre> {{say}} </pre>
+      <pre> {{result}} </pre>
+    </main>
   </body>
 </html>
