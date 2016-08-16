@@ -1,7 +1,7 @@
 ## Aliza's Cowsay Client Lab 19
 
 - clone down repo  
-- cd into lab-aliza directory  
+- cd into `lab-aliza` directory  
 - git checkout branch `lab-19`  
 - install dependencies: `npm i`  
 - run: `webpack`  
