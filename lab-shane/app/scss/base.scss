@@ -1,0 +1,11 @@
+// @import "normalize";
+@import "theme";
+
+body{
+  background-color: $tertiary-color;
+  color: $primary-color;
+}
+
+h1{
+  color: $secondary-color;
+}
