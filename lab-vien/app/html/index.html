@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app='cowsayApp'>
+  <head>
+    <title>vien's cowsay client</title>
+    <script src='bundle.js'></script>
+    <link rel='stylesheet' href='bundle.css'>
+  </head>
+  <body>
+    <main ng-controller='CowsayController'>
+      <form novalidate ng-submit='save()'>
+        <label for='cowsay-text'>What should the cow say?<br /></label>
+        <input class='input-text' type='cowsay-text' ng-model='cowtext'>
+
+        <select ng-model="cowType">
+          <option ng-repeat="cow in allCowTypes" value="{{cow}}">{{ cow }}</option>
+        </select>
+
+        <button type='submit'>save</button>
+        <button type='button' ng-click='reset()'>reset</button>
+
+      </form>
+      <pre class='preview'>{{ say() }}</pre>
+      <pre class='saved'>{{ saved }}</pre>
+    </main>
+  </body>
+</html>
