@@ -1,0 +1,12 @@
+@import './vendor/normalize';
+@import './theme';
+
+//need to add colors once I finish html
+body {
+  background-color: $main-color;
+  color: $dark-accent-color;
+}
+
+form {
+  background-color: $accent-color;
+}
