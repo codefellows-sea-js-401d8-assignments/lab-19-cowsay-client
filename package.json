@@ -1,0 +1,30 @@
+{
+  "name": "lab-19-cowsay-client",
+  "version": "1.0.0",
+  "description": "![cf](https://i.imgur.com/7v5ASc8.png) lab 19 cowsay client ======",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Firefly4266/lab-19-cowsay-client.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Firefly4266/lab-19-cowsay-client/issues"
+  },
+  "homepage": "https://github.com/Firefly4266/lab-19-cowsay-client#readme"
+}
