@@ -11,8 +11,8 @@
         <label for='cowsay-text'>What should the cow say?<br /></label>
         <input name='cowsay-text' class='input-text' type='cowsay-text' ng-model='cowtext'>
 
-        <select ng-model="cowType">
-          <option ng-repeat="cow in allCowTypes" value="{{cow}}">{{ cow }}</option>
+        <select ng-model='cowType'>
+          <option ng-repeat='cow in allCowTypes' value='{{cow}}'>{{ cow }}</option>
         </select>
 
         <button type='submit'>save</button>
