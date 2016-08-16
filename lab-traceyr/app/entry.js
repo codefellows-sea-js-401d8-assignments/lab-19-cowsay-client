@@ -9,7 +9,13 @@ const cowsay = require('cowsay-browser');
 angular.module('lab19', []);
 
 angular.module('lab19').controller('CowsayController', ['$scope', function($scope){
-  console.log('words');
+  $scope.cowtext = 'Bowties are cool';
+  $scope.say = function(){
+    return '\n' + cowsay.say({text:$scope.cowtest});
+  };
+  $scope.speakIt = function(){
+    $scope.result = $scope.say();
+  };
 }]);
 
 console.log('Geranimo!');
