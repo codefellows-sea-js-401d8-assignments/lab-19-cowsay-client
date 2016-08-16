@@ -4,6 +4,7 @@
   "description": "![cf](https://i.imgur.com/7v5ASc8.png) lab 19 cowsay client ======",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint ./app/** webpack.config.js",
     "watch": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
