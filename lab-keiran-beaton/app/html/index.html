@@ -11,8 +11,7 @@
         <input type="text" ng-model="cowText">
         <input  type="submit" value="done">
       </form>
-      <button ng-click="result = ' '">Clear Result</button>
-      <pre> {{ say() }} </pre>
+      <pre> {{ say(cowText) }} </pre>
       <pre> {{ result }} </pre>
     </main>
   </body>

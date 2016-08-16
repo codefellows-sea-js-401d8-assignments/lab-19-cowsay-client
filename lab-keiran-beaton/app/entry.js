@@ -18,7 +18,9 @@ angular.module('cowsayApp')
   $scope.say = function() {
     return '\n' + cowsay.say({text: $scope.cowText});
   };
+
   $scope.alreadySaid = function() {
     $scope.result = $scope.say();
   };
+
 }]);
