@@ -9,7 +9,7 @@
     <main ng-controller='CowsayController'>
       <form novalidate ng-submit='save()'>
         <label for='cowsay-text'>What should the cow say?<br /></label>
-        <input class='input-text' type='cowsay-text' ng-model='cowtext'>
+        <input name='cowsay-text' class='input-text' type='cowsay-text' ng-model='cowtext'>
 
         <select ng-model="cowType">
           <option ng-repeat="cow in allCowTypes" value="{{cow}}">{{ cow }}</option>
