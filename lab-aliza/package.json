@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",
-    "lint": "eslint **/*.*",
+    "lint": "eslint [**/*.js, **/*.html, **/*.scss]",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -17,6 +17,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "node-sass": "^3.8.0",
+    "normalize-scss": "^5.0.3",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",

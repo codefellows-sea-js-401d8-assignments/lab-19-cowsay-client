@@ -14,7 +14,7 @@ angular.module('demoApp')
   $scope.say = function(){
     return '\n' + cowsay.say({text: $scope.cowtext});
   };
-  $scope.cowsaysIt = function(){
-    $scope.cowsayResult = $scope.sayIt();
+  $scope.speakIt = function(){
+    $scope.result = $scope.say();
   };
 }]);
