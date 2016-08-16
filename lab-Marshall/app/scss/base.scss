@@ -1,0 +1,17 @@
+@import 'theme';
+@import 'style';
+@import 'vendor/normalize';
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  // font-family: Oswald;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
