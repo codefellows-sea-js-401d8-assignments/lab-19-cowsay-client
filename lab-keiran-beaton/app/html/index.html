@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="demoApp">
+<html ng-app="cowsayApp">
   <head>
     <title>Cowsay Client Lab</title>
     <script src="bundle.js"></script>
@@ -7,10 +7,11 @@
   </head>
   <body>
     <main ng-controller="CowsayController">
-      <form novalidate ng-submit="alreadySaid">
+      <form novalidate ng-submit="alreadySaid()">
         <input type="text" ng-model="cowText">
         <input  type="submit" value="done">
       </form>
+      <button ng-click="result = ' '">Clear Result</button>
       <pre> {{ say() }} </pre>
       <pre> {{ result }} </pre>
     </main>
