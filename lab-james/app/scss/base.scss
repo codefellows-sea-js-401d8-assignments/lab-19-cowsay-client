@@ -1,0 +1,18 @@
+@import './vendor/normalize';
+@import './theme';
+
+body {
+  background-color: $primary-color;
+}
+
+main {
+  float: center;
+}
+
+#say {
+  color: $secondary-color;
+}
+
+#said {
+  color: $tertiary-color;
+}
