@@ -1,5 +1,4 @@
 'use strict';
-
 const ExtractText = require('extract-text-webpack-plugin');
 
 module.exports = {
