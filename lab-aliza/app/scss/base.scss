@@ -1,0 +1,17 @@
+@import 'theme', './vendor/normalize';
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: $background-color;
+  color: $secondary-color;
+  margin: 20px;
+  input {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 5px;
+  }
+}
