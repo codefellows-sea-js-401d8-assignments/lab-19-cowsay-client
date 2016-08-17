@@ -8,7 +8,7 @@ In the command line, run `webpack` to create bundle.js
 
 ## Running the app
 
-Use `live-server` in the command line to open the app on localhost:8080
+In the command line, run `npm run watch`, then go to localhost:8080 on your browser
 
 Write whatever you want, and click the done button to save a copy of your cow saying what you wrote.
 
