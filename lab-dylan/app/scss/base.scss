@@ -1,10 +1,12 @@
+@import '_theme';
+
 html, body {
   width: 100%;
   height: 100%;
 }
 
 body {
-  background: grey;
-  color: brown;
+  background: $app-active;
+  color: $app-focus;
   font-size: 2.5em;
 }

@@ -12,6 +12,9 @@ module.exports = {
   plugins: [
     new ExtractText('bundle.css'),
   ],
+  sassLoader: {
+    includePaths: `${__dirname}/app/scss/lib`,
+  },
   module: {
     loaders: [
       {
