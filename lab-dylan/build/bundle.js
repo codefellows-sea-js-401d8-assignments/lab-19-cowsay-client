@@ -44,21 +44,13 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(1);
-	(function webpackMissingModule() { throw new Error("Cannot find module \"watch\""); }());
-
-
-/***/ },
-/* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
 	'use strict';
 
+	__webpack_require__(1);
 	__webpack_require__(2);
-	__webpack_require__(3);
 
-	const angular = __webpack_require__(7);
-	const cowsay = __webpack_require__(9);
+	const angular = __webpack_require__(6);
+	const cowsay = __webpack_require__(8);
 
 	angular.module('cowsayApp', []);
 
@@ -74,30 +66,30 @@
 
 
 /***/ },
-/* 2 */
+/* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "index.html";
 
 /***/ },
-/* 3 */
+/* 2 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
+/* 3 */,
 /* 4 */,
 /* 5 */,
-/* 6 */,
-/* 7 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(8);
+	__webpack_require__(7);
 	module.exports = angular;
 
 
 /***/ },
-/* 8 */
+/* 7 */
 /***/ function(module, exports) {
 
 	/**
@@ -31870,12 +31862,12 @@
 	!window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
 
 /***/ },
-/* 9 */
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baloon = __webpack_require__(10);
-	var cows = __webpack_require__(12);
-	var faces = __webpack_require__(17);
+	var baloon = __webpack_require__(9);
+	var cows = __webpack_require__(11);
+	var faces = __webpack_require__(16);
 
 	exports.say = function (options) {
 		return doIt(options, true);
@@ -31898,10 +31890,10 @@
 
 
 /***/ },
-/* 10 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var os = __webpack_require__(11);
+	var os = __webpack_require__(10);
 
 	exports.say = function (text, wrap) {
 		delimiters = {
@@ -32009,7 +32001,7 @@
 	}
 
 /***/ },
-/* 11 */
+/* 10 */
 /***/ function(module, exports) {
 
 	exports.endianness = function () { return 'LE' };
@@ -32060,13 +32052,13 @@
 
 
 /***/ },
-/* 12 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var path = __webpack_require__(13);
-	var replacer = __webpack_require__(15);
+	var path = __webpack_require__(12);
+	var replacer = __webpack_require__(14);
 
-	var cowdefs = __webpack_require__(16).cowdefs;
+	var cowdefs = __webpack_require__(15).cowdefs;
 
 	var textCache = {};
 
@@ -32095,7 +32087,7 @@
 
 
 /***/ },
-/* 13 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {// Copyright Joyent, Inc. and other Node contributors.
@@ -32323,10 +32315,10 @@
 	    }
 	;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(14)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(13)))
 
 /***/ },
-/* 14 */
+/* 13 */
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -32492,7 +32484,7 @@
 
 
 /***/ },
-/* 15 */
+/* 14 */
 /***/ function(module, exports) {
 
 	module.exports = function (cow, variables) {
@@ -32541,7 +32533,7 @@
 	}
 
 /***/ },
-/* 16 */
+/* 15 */
 /***/ function(module, exports) {
 
 	// Generated code
@@ -32595,7 +32587,7 @@
 	}
 
 /***/ },
-/* 17 */
+/* 16 */
 /***/ function(module, exports) {
 
 	var modes = {
