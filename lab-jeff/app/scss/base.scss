@@ -1,4 +1,4 @@
-$app-default: red;
+@import "theme";
 
 html, body {
   width: 100%;
@@ -6,5 +6,11 @@ html, body {
 }
 
 body {
-  background-color: $app-default;
+  background-color: $primary-color;
+}
+
+h1 {
+  background-color: $secondary-color;
+  color: $tertiary-color;
+  width: 50%;
 }
